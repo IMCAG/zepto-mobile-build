@@ -1,11 +1,21 @@
 /* Zepto 1.2.0 - zepto event ie data selector touch gesture stack - zeptojs.com/license */
 (function(global, factory) {
-  if (typeof define === 'function' && define.amd)
-    define(function() { return factory(global) })
-  else
-    factory(global)
-}(this, function(window) {
-  var Zepto = (function() {
+    if (typeof module === 'object' && typeof module.exports === 'object') {
+        module.exports = global.document ? factory(global, true) : function(w) {
+            if (!w.document) {
+                throw new Error('Zepto requires a window with a document');
+            }
+            return factory(w);
+        }
+    }
+    else if (typeof define === 'function' && define.amd) {
+        define(function() { return factory(global) });
+    }
+    else {
+        factory(global);
+    }
+}(typeof window !== 'undefined' ? window : this, function(window) {
+    var Zepto = (function() {
   var undefined, key, $, classList, emptyArray = [], concat = emptyArray.concat, filter = emptyArray.filter, slice = emptyArray.slice,
     document = window.document,
     elementDisplay = {}, classCache = {},
@@ -1621,5 +1631,5 @@ window.$ === undefined && (window.$ = Zepto)
     }
   })
 })(Zepto)
-  return Zepto
-}))
+    return Zepto;
+}));
