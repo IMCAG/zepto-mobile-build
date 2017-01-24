@@ -6,6 +6,7 @@ Custom [Zepto](https://github.com/madrobby/zepto) build replacing jQuery in some
 - event
 - ie
 - data
+- detect
 - selector
 - touch
 - gesture
@@ -13,12 +14,12 @@ Custom [Zepto](https://github.com/madrobby/zepto) build replacing jQuery in some
 
 Compiled using:
 ```console
-$ SET MODULES=zepto event ie data selector touch gesture stack
+$ SET MODULES=zepto event ie data detect selector touch gesture stack
 $ npm run-script dist
 ```
 
 ## Install
-Adding SSH deploy key to the ssh-agent
+Add SSH deploy key to the ssh-agent
 ```console
 $ ssh-agent ssh-add path/to/id_rsa
 ```
