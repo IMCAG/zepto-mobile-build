@@ -4,6 +4,7 @@ Custom [Zepto](https://github.com/madrobby/zepto) build replacing jQuery in some
 ## Included modules
 - zepto
 - event
+- ajax
 - ie
 - data
 - detect
@@ -14,7 +15,7 @@ Custom [Zepto](https://github.com/madrobby/zepto) build replacing jQuery in some
 
 Compiled using:
 ```console
-$ SET MODULES=zepto event ie data detect selector touch gesture stack
+$ SET MODULES=zepto event ajax ie data detect selector touch gesture stack
 $ npm run-script dist
 ```
 
@@ -35,4 +36,4 @@ Lib | Uncompressed | Compressed
 :-- | -----------: | ---------:
 jQuery 3 | 271 KB | 85 KB
 jQuery 2 | 242 KB | 83 KB
-Zepto | 56 KB | 26 KB
+Zepto | 62 KB | 28 KB
