@@ -1,0 +1,14 @@
+{
+  "name": "zepto",
+  "version": "1.2.0",
+  "authors": [],
+  "main": "dist/zepto.js",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+      "*",
+      "!dist"
+  ],
+  "dependencies": {},
+  "devDependencies": {}
+}
