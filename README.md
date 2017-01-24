@@ -11,6 +11,18 @@ Included modules:
 - gesture
 - stack
 
+## Install
+Adding SSH deploy key to the ssh-agent
+```console
+$ ssh-agent ssh-add path/to/id_rsa
+```
+
+Install using Bower OR npm
+```console
+$ bower install --save IMCAG/zepto-mobile-build
+$ npm install --save IMCAG/zepto-mobile-build
+```
+
 ## Comparison
 Lib | Uncompressed | Compressed
 :-- | -----------: | ---------:
