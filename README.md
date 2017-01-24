@@ -1,7 +1,7 @@
 # zepto-mobile-build
 Custom [Zepto](https://github.com/madrobby/zepto) build replacing jQuery in some IMC mobile apps.
 
-Included modules: 
+## Included modules
 - zepto
 - event
 - ie
@@ -10,6 +10,12 @@ Included modules:
 - touch
 - gesture
 - stack
+
+Compiled using:
+```console
+$ SET MODULES=zepto event ie data selector touch gesture stack
+$ npm run-script dist
+```
 
 ## Install
 Adding SSH deploy key to the ssh-agent
