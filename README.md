@@ -20,15 +20,14 @@ $ npm run-script dist
 ```
 
 ## Install
-Add SSH deploy key to the ssh-agent
+[Add SSH deploy key to your ssh-agent](https://jira.im-c.de/confluence/display/NM/Github+Deploy+Keys)
 ```console
-$ ssh-agent ssh-add path/to/id_rsa
+$ ssh-agent ssh-add path/to/github_deploy_key_rsa
 ```
 
-Install using Bower OR npm
+Install using Bower
 ```console
-$ bower install --save IMCAG/zepto-mobile-build
-$ npm install --save IMCAG/zepto-mobile-build
+$ bower install --save ssh://github.com/IMCAG/zepto-mobile-build.git#*
 ```
 
 ## Comparison
